@@ -2,10 +2,11 @@ function iniFunc() {
     if (filePlaying == 0) {
         loadSound1(0);
         loadSound1(1);
-    } if (filePlaying == trialNum[0]) {
-        loadSound2(0);
-        loadSound2(1);
     }
+    //if (filePlaying == trialNum[0]) {
+    //    loadSound2(0);
+    //    loadSound2(1);
+    //}
 
 }
 
@@ -124,9 +125,10 @@ function saveArrayVal1(n_type, n_playing) {
         if (filePlaying < trialNum[n_type]) {
             loadSound1(0);
             loadSound1(1);
-        } if (filePlaying == trialNum[n_type]) {
-            iniFunc();
         }
+        //if (filePlaying == trialNum[n_type]) {
+        //    iniFunc();
+        //}
         debugShowLog("Answers filled!");
     } else {
         alert("Select answer!");
